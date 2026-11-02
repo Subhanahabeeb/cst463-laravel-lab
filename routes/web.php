@@ -31,3 +31,6 @@ Route::get('/roll/{roll}',function(Student $roll){
 Route::get('/api/students',function() {
     return response()->json(Student::all());
 });
+Route::get('/', function () {
+    return redirect('/students');
+});
