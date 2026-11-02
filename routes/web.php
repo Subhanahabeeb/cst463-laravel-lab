@@ -29,5 +29,5 @@ Route::get('/roll/{roll}',function(Student $roll){
     return view('students.show',['student'=>$roll]);
 });
 Route::get('/api/students',function() {
-    return response()->son(Student::all());
+    return response()->json(Student::all());
 });
