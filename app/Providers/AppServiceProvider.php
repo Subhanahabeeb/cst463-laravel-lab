@@ -25,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
     return Student::where('roll_no', $value)
         ->orWhere('roll_no', 'CS23-' . $value)
         ->firstOrFail();
-        });
+    });
     }
 }

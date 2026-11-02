@@ -27,9 +27,9 @@ class StudentController extends Controller
             'roll_no' => 'required',
             'name' => 'required',
             'email' => 'required|email',
-            'department' => 'required',
-            'semester' => 'required|integer',
-            'cgpa' => 'required|numeric',
+            'department' => 'nullable',
+            'semester' => 'nullable|integer',
+            'cgpa' => 'nullable|numeric',
         ]);
 
         Student::create($data);
